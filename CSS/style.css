@@ -5,6 +5,7 @@
   --secoundBlack: #111111;
   --mainWhite: #ffffff;
   --mainLightBlue: #3498db;
+  --headerNavA: #219aeb;
 }
 * {
   margin: 0;
@@ -35,11 +36,39 @@
 }
 .barLinks a {
   padding: 1em;
+  transition: all 0.5s ease-in-out;
+  position: relative;
 }
 .barLinks a,
 .barLogin a {
   color: var(--mainWhite);
   text-decoration: none;
+}
+.barLinks a:hover {
+  color: var(--headerNavA);
+  font-size: 1.2em;
+  text-shadow: 0px 0px 8px rgba(255,255,255,0.6);
+}
+.barLinks a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--headerNavA);
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+
+}
+.barLinks a:hover::after {
+  width: 100%;
+}
+.barLinks a:hover {
+  background-color: rgba(255,255,255,0.2);
+  padding: 1.2em;
+  border-radius: 8px;
+
 }
 .mainText {
   position: absolute;
@@ -72,3 +101,8 @@
     color: var(--mainLightBlue);
   }
 }
+
+
+/*  Sayori morta kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
+/* Para de balançar com o vento ai em cima Sayori klkkkkkkkkkkkkkkkk*/
+/*Header difícil da poha vsf*/
