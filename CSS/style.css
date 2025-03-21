@@ -6,16 +6,24 @@
   --mainWhite: #ffffff;
   --mainLightBlue: #3498db;
   --headerNavA: #219aeb;
+  --mainTitle: montserrat, sans-serif;
+  --secondTitle: poppins, sans-serif;
+  --mainText: Open Sans, sans-serif;
+  --secindText: Roboto, sans-serif;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: red 1px solid; */
+}
+body {
+  background-color: var(--mainWhite);
 }
 /*Header */
 .mainHeader {
   background-image: linear-gradient(rgba(26, 42, 58, 0.8), rgba(44, 62, 80, 0.8)), url(../Imagens/backgroundMainHeader.avif);
-  width: 100vw;
+  width: 98.9vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -27,7 +35,7 @@
   justify-content: space-between;
   background-color: transparent;
   align-items: center;
-  font-family: Open Sans, sans-serif;
+  font-family: var(--mainText);
   position: sticky;
   top: 0;
 }
@@ -91,6 +99,57 @@
   height: 300vh;
 }
 /* Main */
+#sobreSite {
+  display: flex;
+  color: var(--mainBlack);
+  padding: 2em;
+  justify-content: center;
+}
+.titleSobreSite {
+  font-family: var(--secondTitle);
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.textSobreSite {
+  font-family: var(--mainText);
+  font-size: 1.2em;
+}
+.imgSobreSite {
+  margin-top: 2em;
+  border-radius: 90px;
+  position: absolute;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.galeria {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.halteres {
+  left: 0;
+  top: -90px;
+  left: 220px;
+  z-index: 1;
+  animation: imgFlutuante 10s ease-in-out infinite;
+}
+.homemHaltere {
+  left: 20px;
+  top: 30px;
+  z-index: 2;
+  animation: imgFlutuante 5s ease-in-out infinite;
+}
+.mulherCorda {
+  left: 200px;
+  top: 60px; 
+  z-index: 3;
+  animation: imgFlutuante 15s ease-in-out infinite;
+}
+
 /* Footer */
 /* Animações */
 @keyframes changeColor{
@@ -101,7 +160,17 @@
     color: var(--mainLightBlue);
   }
 }
-
+@keyframes imgFlutuante {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /*  Sayori morta kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
 /* Para de balançar com o vento ai em cima Sayori klkkkkkkkkkkkkkkkk*/
