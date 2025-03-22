@@ -99,6 +99,9 @@ body {
   height: 300vh;
 }
 /* Main */
+main {
+  margin-top: 7em;
+}
 #sobreSite {
   display: flex;
   color: var(--mainBlack);
@@ -139,13 +142,13 @@ body {
 }
 .homemHaltere {
   left: 20px;
-  top: 30px;
+  top: -180px;
   z-index: 2;
   animation: imgFlutuante 5s ease-in-out infinite;
 }
 .mulherCorda {
-  left: 200px;
-  top: 60px; 
+  left: 150px;
+  top: -70px; 
   z-index: 3;
   animation: imgFlutuante 15s ease-in-out infinite;
 }
