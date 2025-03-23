@@ -106,7 +106,6 @@ main {
   display: flex;
   color: var(--mainBlack);
   padding: 2em;
-  justify-content: center;
 }
 .titleSobreSite {
   font-family: var(--secondTitle);
