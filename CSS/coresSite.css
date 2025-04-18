@@ -1,0 +1,13 @@
+:root {
+    --mainDarkBlue: #1a2a3a;
+    --secoundDarkBlue: #2c3e50;
+    --mainBlack: #000000;
+    --secoundBlack: #111111;
+    --mainWhite: #ffffff;
+    --mainLightBlue: #3498db;
+    --headerNavA: #219aeb;
+    --mainTitle: montserrat, sans-serif;
+    --secondTitle: poppins, sans-serif;
+    --mainText: Open Sans, sans-serif;
+    --secindText: Roboto, sans-serif;
+  }

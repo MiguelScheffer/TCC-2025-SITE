@@ -2,7 +2,7 @@
     $dbHost = "Localhost";
     $dbUserName = "root";
     $dbPassword = "";
-    $dbName = "powershape";
+    $dbName = "TCC";
 
     $conn = mysqli_connect($dbHost, $dbUserName, $dbPassword, $dbName);
     if (!$conn) {
