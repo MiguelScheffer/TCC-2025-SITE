@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../CSS/dashboard.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="headerMensagemDiaria"></h1>
+    </header>
+    <main>
+      <section class="exerciseCards">
+        <h2>Meus Treinos</h2>
+        <p id="loadingMessage">Carregando seus treinos...</p>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </section>
+    </main>
+
+    <button
+      class="add"
+      onclick="window.location.href='../HTML/adicionarTreino.html'"
+    >
+      <span>Adicionar treino</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 4.5v15m7.5-7.5h-15"
+        />
+      </svg>
+    </button>
+
+    <script src="../Javascript/dashboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Javascript/swiper.js"></script>
+  </body>
+</html>

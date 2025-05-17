@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicione um exercício</title>
+</head>
+<body>
+    <form action="../PHP/salvarExercicio.php" method="post">
+        <input type="hidden" name="id_treino" id="id_treino_hidden">
+
+        <input type="text" name="nome_exercicio" placeholder="Nome do exercício" required>
+
+        <textarea name="descricao" placeholder="Descrição do exercício (opcional)"></textarea>
+
+        <label><input type="radio" name="tipo" value="tempo"> Por Tempo</label>
+        <label><input type="radio" name="tipo" value="repeticao"> Por Repetição</label>
+
+        <input type="number" name="temp_segundos" min="0" placeholder="Tempo (segundos)">
+        <input type="number" name="quant_repeticoes" min="0" placeholder="Repetições">
+
+        <button class="submit" name="submit" type="submit">Adicionar exercício</button>
+    </form>
+</body>
+<script src="../Javascript/adicionarExer.js"></script>
+</html>
