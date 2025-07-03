@@ -1,0 +1,154 @@
+@import url(coresSite.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Courier New", Courier, monospace;
+}
+.img_cadastro {
+  height: 100vh;
+}
+.mainText {
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  animation: upText 2s ease-in-out forwards;
+  animation-delay: 3s;
+}
+.mainText h1 {
+  font-size: 3em;
+  color: var(--mainWhite);
+  font-family: Montserrat, sans-serif;
+  font-size: 7em;
+}
+.mudarCor {
+  color: var(--mainBlack);
+  animation: changeColor 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  border-radius: 20px;
+  position: relative;
+  color: #fff;
+  margin-right: 14%;
+
+  opacity: 0;
+  animation: fadeInForm 1.5s ease-out forwards;
+  animation-delay: 5s;
+}
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: medium;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  background-color: #00bfff;
+}
+
+.submit:hover {
+  background-color: #00bfff96;
+}
+
+@keyframes changeColor {
+  0% {
+    color: var(--mainBlack);
+  }
+  100% {
+    color: var(--mainLightBlue);
+  }
+}
+
+@keyframes upText {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 10%;
+  }
+}
+
+@keyframes fadeInForm {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

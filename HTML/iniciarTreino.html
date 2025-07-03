@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Treino</title>
+    <link rel="stylesheet" href="../CSS/iniciarTreino.css">
+</head>
+<body>
+    <header>
+        <h1 id="workout-title">Treino: Carregando...</h1>
+    </header>
+    <main>
+        <section class="workout-display">
+            <h2>Seus Exercícios</h2>
+            <div id="exercise-list">
+                <p id="loading-exercises-message">Carregando exercícios...</p>
+            </div>
+
+            <div id="timer-display" style="font-size: 3em; margin: 20px 0; text-align: center;">--:--</div>
+            <p id="current-exercise-name" style="font-size: 1.5em; text-align: center;"></p>
+            <p id="current-exercise-details" style="text-align: center;"></p>
+
+            <div class="controls" style="text-align: center; margin-top: 20px;">
+                <button id="start-button">Iniciar Treino</button>
+                
+                <button id="prev-button" style="display: none;">&#x25C0; Voltar</button>
+                <button id="pause-resume-button" style="display: none;">Pausar</button>
+                <button id="reset-button" style="display: none;">Reiniciar</button>
+                <button id="next-button" style="display: none;">Avançar &#x25B6;</button>
+                
+                <button id="finish-workout-button" style="display: none; background-color: #dc3545;">Finalizar Treino</button> </div>
+            <p id="workout-message" style="text-align: center; margin-top: 15px; color: green; display: none;">Treino concluído! Parabéns!</p>
+            <p id="aborted-workout-message" style="text-align: center; margin-top: 15px; color: orange; display: none;">Treino finalizado antes do tempo.</p>
+            <p id="workout-completed-message" style="text-align: center; margin-top: 15px; color: green; display: none;">Você completou todos os exercícios! Clique em 'Finalizar Treino' para registrar.</p> </section>
+    </main>
+
+    <script src="../Javascript/iniciarTreino.js"></script>
+</body>
+</html>
