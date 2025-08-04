@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const mensagens = [
     "Bora exercitar?",
     "Tá gordo, bora se mecher?",
-    "Yuri morta",
+    "Sayori morta kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk",
     "Vamos treinar hoje?",
     "Que tal um treino rápido?",
     "Hora de suar!",
